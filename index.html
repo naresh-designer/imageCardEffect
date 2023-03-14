@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+    body{
+        font-family: 'Poppins', sans-serif;
+    }
+    .card{
+        position: relative;
+        width: 300px;
+        height: 400px;
+        background-color: black;
+        color: #fff;
+        overflow: hidden;
+    }
+    .card .imgBox, .card .detail{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        box-sizing: border-box;
+        transition: .5s;
+    }
+    .card .imgBox{
+        top: 0;
+        left: 0;
+    }
+    .card:hover .imgBox{
+        top: 0;
+        left: -100%;
+    }
+    .card .imgBox img{
+        width: 100%;
+        height: 100%;
+    }
+    .card .detail{
+        background-color: aquamarine;
+        top: 0;
+        left: 100%;
+        padding: 20px;
+    } 
+    .card:hover .detail{
+        top: 0;
+        left: 0%;
+    }
+</style>
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="imgBox"><img src="images/1.jpg" alt=""></div>
+        <div class="detail">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+</body>
+</html>
