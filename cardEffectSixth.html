@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+         body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #27282c;
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+        }
+        .container{
+            position: relative;
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            transition: .5s;
+        }
+        .container .card{
+            position: relative;
+            background-color: #fff;
+            width: 300px;
+            padding: 40px 0;
+            text-align: center;
+            margin: 0 20px;
+            transition: .5s;
+            overflow: hidden;
+        }
+        .container .card .icon{
+            position: relative;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            color: #fff;
+            background-color: #000;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            transition: 1s;
+        }
+        .container .card:nth-child(1) .icon{
+            box-shadow: 0 0 0 0 red;
+            background-color: red;
+        }
+        .container .card:nth-child(1):hover .icon{
+            box-shadow: 0 0 0 500px red;
+        }
+        .container .card:nth-child(2) .icon{
+            box-shadow: 0 0 0 0 green;
+            background-color: green;
+        }
+        .container .card:nth-child(2):hover .icon{
+            box-shadow: 0 0 0 500px green;
+        }
+        .container .card:nth-child(3) .icon{
+            box-shadow: 0 0 0 0 blue;
+            background-color: blue;
+        }
+        .container .card:nth-child(3):hover .icon{
+            box-shadow: 0 0 0 500px blue;
+        }
+        .container .card .content{
+            position: relative;
+            z-index: 1;
+            transition: .5s;
+        }
+        .container .card:hover .content{
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="icon">01</div>
+            <div class="content">
+                <h2>1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">02</div>
+            <div class="content">
+                <h2>2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">03</div>
+            <div class="content">
+                <h2>3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="">Read More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
